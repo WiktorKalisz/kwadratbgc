@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .square {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  font-size: 0.4rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+  bottom: 100%;
+}
+
+body .btn {
+  height: 40px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  margin-top: 70px;
+}
+
+body .btn:hover ~ .square {
+  top: calc(100% - 200px);
+  left: calc(100% - 200px);
+  width: 200px;
+  height: 200px;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

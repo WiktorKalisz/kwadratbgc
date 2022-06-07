@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    .square {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        font-size: 0.4rem;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition: 3s linear;
+        bottom: 100%;
+    }
+
+    .btn {
+        height: 40px;
+        width: 150px;
+        color: white;
+        background-color: black;
+        margin-top: 70px;
+    }
+
+    .btn:hover ~ .square {
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+        width: 200px;
+        height: 200px;
+        font-size: 3rem;
+    }
+}
